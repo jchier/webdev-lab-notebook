@@ -9,18 +9,52 @@
   color: var(--white);
 }
 
+.main {
+  margin-top: 80px;
+}
+
 .static {
+  position: static;
+  width: 300px;
+  height: 400px;
   background-color: var(--darkviolet);
 }
 
 .relative {
+  position: relative;
+  top: -400px;
+  left: 310 px;
+  width: 300px;
+  height: 400px;
   background-color: var(--purple);
 }
 
 .absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
   background-color: var(--maroon);
 }
 
 .fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
   background-color: var(--darkgolden);
 }
+
+/*default elements are block or inline
+blocks span the whole width of the parent container
+neighboring block are placed on a new line
+
+inline elements span the width of their content
+and neighboring elements are next to each other on the 
+same line.
+
+absolute, relative, fixed - help use break from default
+and place elements where we want.*/

@@ -2,3 +2,13 @@
   width: 600px;
   margin: 40px auto;
 }
+
+/*pseudoletter: two colons*/
+p::first-letter {
+  font-size: 3em;
+}
+
+/*pseudoclass: one colon*/
+p:hover {
+  background-color: lightskyblue;
+}

@@ -1,5 +1,19 @@
 /* Specificity Exercise */
 
+/* X - Y - Z
+X - number of ID selectors
+Y - the number of class selectors, pseudoclass selectors, and attribute selectors
+Z - Element selector and the pseudo element selector
+*/
+/* which is more specific?
+  0-1-2
+  1-0-1
+  0-0-10
+  is less specific than
+  0 - 1 - 0
+  
+*/
+
 nav .list-item > a {
   color: var(--purple);
 }
@@ -16,7 +30,7 @@ section .main::first-line {
   color: var(--purple);
 }
 
-nav ul.menu li#first a:not([class='visited']) {
+nav ul.menu li#first a:not([class="visited"]) {
   color: var(--purple);
 }
 
